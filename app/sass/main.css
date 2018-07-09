@@ -1,0 +1,144 @@
+@charset "UTF-8";
+@import url(d:\!WORK\! PROJECTS\! ПЛЕШАКОВ\В РАБОТЕ\Авиа\html\app\libs\swiper\swiper.css);
+@import url(d:\!WORK\! PROJECTS\! ПЛЕШАКОВ\В РАБОТЕ\Авиа\html\app\libs\animate\animate.css);
+@font-face {
+  font-family: "Gilroy-Semibold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/Gilroy/Gilroy-Semibold.eot");
+  src: url("../fonts/Gilroy/Gilroy-Semibold.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy/Gilroy-Semibold.woff") format("woff"), url("../fonts/Gilroy/Gilroy-Semibold.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+* {
+  transition: all .15s;
+  -webkit-transition: all .15s;
+}
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  padding-bottom: 0px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.main .content {
+  margin: 0 0 0 17.1775%;
+}
+
+.main .sidebar {
+  width: 17.1775%;
+  max-width: 280px;
+  background: #083e6f;
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  color: #fff;
+  z-index: 10;
+}
+
+.sidebar .sidebar-header .sidebar-header-info {
+  position: relative;
+  padding-top: 13px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item {
+  float: left;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--flag {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: 0px -29px;
+  width: 19px;
+  height: 16px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--t {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -58px -18px;
+  width: 8px;
+  height: 18px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--water {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -58px 0px;
+  width: 12px;
+  height: 18px;
+}
+
+.sidebar .sidebar-header .sidebar-header-language .language-item .language-item__icon.language-item__icon--rus {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -34px -29px;
+  width: 15px;
+  height: 15px;
+}
+
+.sidebar .sidebar-header .sidebar-header-language .language-item .language-item__icon.language-item__icon--eng {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -19px -29px;
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=main.css.map */

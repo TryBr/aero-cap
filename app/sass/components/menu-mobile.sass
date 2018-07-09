@@ -1,0 +1,121 @@
+.menu-mobile-wrapper
+  height: 85px
+  background: #083e6f
+  padding-right: 24px
+  padding-left: 24px
+  display: none
+  &.active
+    border-left: 1px solid #2f5b82
+  .menu-mobile-btn
+    width: 30px
+    height: 18px
+    background: url("../img/sprite/menu-btn.png") no-repeat
+    float: left
+    margin-top: 34px
+    &.active
+      background: url("../img/sprite/menu-btn-close.png") no-repeat
+      width: 20px
+      height: 20px
+      &:active
+        background: url("../img/sprite/menu-btn-close--hover.png") no-repeat
+        width: 20px
+        height: 20px
+  .menu-mobile-logo
+    margin-top: 9px
+    margin-left: 33px
+    margin-right: 39px
+    width: 111px
+    height: 62px
+    background: url("../img/sprite/logo-mobile.png") no-repeat
+    float: left
+    .menu-mobile-logo__link
+      display: block
+      text-decoration: none
+  .menu-mobile-info
+    width: 290px
+    float: left
+    position: relative
+    margin-top: 28px
+    .info-item
+      float: left
+      font-family: "Gilroy-Regular"
+      font-size: 11px
+      color: #ffffff
+      &.info-item--flag
+        margin-left: 19px
+      &.info-item--t
+        margin-left: 23px
+      &.info-item--water
+        margin-left: 29px
+      .info-item__icon
+        float: left
+        &.info-item__icon--flag
+          background: url("../img/sprite/info-item__icon--flag.png") no-repeat
+          width: 19px
+          height: 16px
+          margin-right: 9px
+        &.info-item__icon--t
+          background: url("../img/sprite/info-item__icon--t.png") no-repeat
+          width: 8px
+          height: 18px
+          margin-right: 10px
+        &.info-item__icon--water
+          background: url("../img/sprite/info-item__icon--water.png") no-repeat
+          width: 12px
+          height: 18px
+          margin-right: 11px
+      .info-item__value
+        float: left
+        margin-top: 2px
+    &:before
+      content: ''
+      height: 45px
+      width: 1px
+      background: #2f5b82
+      position: absolute
+      top: -11px
+      left: 0px
+    &:after
+      content: ''
+      height: 45px
+      width: 1px
+      background: #2f5b82
+      position: absolute
+      top: -11px
+      right: 0px
+  .menu-mobile-phone
+    font-size: 24px
+    color: #ffc613
+    font-family: "Gilroy-Semibold"
+    text-decoration: none
+    float: right
+    margin-top: 28px
+    margin-right: 3px
+
+
+@media only screen and (max-width : 1299px)
+  .menu-mobile-wrapper
+    display: block
+
+
+@media only screen and (max-width : 767px)
+  .menu-mobile-wrapper
+    height: 65px
+    padding-right: 20px
+    padding-left: 20px
+    .menu-mobile-logo
+      margin-left: 28px
+      margin-top: 12px
+      background-size: contain
+      height: 40px
+      width: 72px
+      margin-right: 0px
+    .menu-mobile-btn
+      width: 25px
+      margin-top: 24px
+    .menu-mobile-info
+      display: none
+    .menu-mobile-phone
+      font-size: 16px
+      margin-right: 0px
+      margin-top: 22px

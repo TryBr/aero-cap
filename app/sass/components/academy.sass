@@ -1,0 +1,292 @@
+.academy-page
+  margin-bottom: 70px
+  &.academy-page--about
+    margin-bottom: 0px
+
+  .academy-friends
+    width: 960px
+    margin: 0 auto
+    margin-top: 50px
+    .academy-friends-item
+      width: 280px
+      float: left
+      margin-right: 56px
+      margin-bottom: 50px
+      height: 293px
+      &:nth-child(3n+3)
+        margin-right: 0px
+      .academy-friends-item-photo
+        border: 1px solid #ebebeb
+        background: #ffffff
+        text-align: center
+        position: relative
+        height: 160px
+        margin-bottom: 25px
+        .academy-friends-item-photo__img
+          position: absolute
+          top: 35px
+          left: 0px
+          right: 0px
+          margin: 0 auto
+      .academy-friends-item__title
+        color: #000000
+        font-size: 18px
+        font-family: "Gilroy-Medium"
+        margin-bottom: 15px
+      .academy-friends-item__description
+        color: #000000
+        font-size: 16px
+        font-family: "Gilroy-Regular"
+        line-height: 21px
+        margin-bottom: 12px
+      .academy-friends-item__link
+        color: #083e6f
+        font-size: 14px
+        transition: all .15s
+        -webkit-transition: all .15s
+        display: inline-block
+        text-decoration: none
+        font-family: "Gilroy-Regular"
+        border-bottom: 1px solid #083e6f
+        &:hover
+          border-bottom: 1px solid transparent
+
+  .academy-about-container
+    position: relative
+    border-bottom: 1px solid #e1e1e1
+    padding-bottom: 49px
+    .academy-about-bg
+      position: absolute
+      background: url("../img/about/about-logo.jpg") no-repeat
+      top: 20px
+      right: 2%
+      width: 729px
+      height: 427px
+
+  .academy-about-numbers
+    width: 960px
+    margin: 0 auto
+    margin-top: 74px
+    .academy-about-numbers-item
+      border-bottom: 2px solid #e1e1e1
+      padding-bottom: 68px
+      margin-bottom: 35px
+      width: 250px
+      &:last-child
+        margin-bottom: 0px
+        border-bottom: none
+      .numbers-item__value
+        font-size: 90px
+        font-family: "PFDin"
+        color: #083e6f
+      .numbers-item__title
+        color: #000000
+        font-size: 16px
+        font-family: "Gilroy-Bold"
+        margin-top: 18px
+        line-height: 22px
+
+
+  .academy-about-info
+    margin-top: 63px
+    .about-info-title
+      font-size: 32px
+      color: #012335
+      font-family: "Gilroy-SemiBold"
+      margin-bottom: 30px
+    .about-info-description
+      font-size: 16px
+      color: #000
+      font-family: "Gilroy-Regular"
+      p
+        margin-bottom: 35px
+        line-height: 20px
+      p:last-child
+        margin-bottom: 0px
+    .about-info-category
+      margin-top: 56px
+      margin-bottom: 16px
+      .about-info-category-item
+        position: relative
+        width: 50%
+        height: 400px
+        float: left
+        &.category-item--children
+          background: url("../files/courses/academy-children.jpg") no-repeat
+          background-size: cover
+        &.category-item--pilots
+          background: url("../files/courses/academy-pilots.jpg") no-repeat
+          background-size: cover
+        .about-info-category-item__title
+          color: #ffffff
+          font-size: 24px
+          font-family: "Gilroy-SemiBold"
+          width: 280px
+          position: absolute
+          top: 140px
+          left: 70px
+        .about-info-category-item-btn
+          font-size: 16px
+          color: #111111
+          font-family: "Gilroy-Medium"
+          width: 160px
+          height: 50px
+          background: #ffc613
+          text-align: left
+          line-height: 50px
+          padding-left: 27px
+          position: relative
+          transition: all .15s
+          -webkit-transition: all .15s
+          text-decoration: none
+          display: block
+          position: absolute
+          top: 230px
+          left: 70px
+          &:before
+            content: ''
+            background: url("../img/sprite/more-btn-arrow.png") no-repeat
+            position: absolute
+            top: 19px
+            right: 23px
+            width: 6px
+            height: 11px
+          &:hover
+            background: #ff9813
+
+
+@media only screen and (max-width : 1299px)
+  .academy-page
+    .academy-about-container
+      padding-bottom: 0px
+      .academy-about-bg
+        position: relative
+        width: 100%
+        background-size: cover
+        left: 0px
+        right: 0px
+    .academy-about-info
+      .about-info-title
+        margin-left: 24px
+        margin-right: 24px
+      .about-info-description
+        margin-left: 24px
+        margin-right: 24px
+      .about-info-category
+        margin-bottom: 0px
+        .about-info-category-item
+          .about-info-category-item__title
+            left: 24px
+          .about-info-category-item-btn
+            left: 24px
+          &.category-item--children
+            .about-info-category-item__title
+              left: 45px
+            .about-info-category-item-btn
+              left: 45px
+
+    .academy-about-numbers
+      width: auto
+      margin-right: 24px
+      margin-left: 24px
+      .academy-about-numbers-item
+        display: inline-block
+        border-bottom: none
+        width: 49%
+        vertical-align: top
+        padding-left: 65px
+
+    .academy-friends
+      width: 720px
+      margin: 0 auto
+      margin-top: 50px
+      .academy-friends-item
+        width: 346px
+        float: left
+        margin-right: 28px
+        margin-bottom: 60px
+        height: auto
+        &:nth-child(3n+3)
+          margin-right: 28px
+        &:nth-child(2n+2)
+          margin-right: 0px
+
+@media only screen and (max-width : 767px)
+  .academy-page
+    margin-bottom: 20px
+    .academy-friends
+      width: 280px
+      margin-right: auto
+      margin-left: auto
+      .academy-friends-item
+        width: auto
+        float: none
+        margin-right: 0px
+        margin-bottom: 40px
+        .academy-friends-item__title
+          font-size: 16px
+        .academy-friends-item__description
+          font-size: 14px
+        .academy-friends-item__link
+          font-size: 14px
+
+    .academy-about-numbers
+      width: 280px
+      margin-left: auto
+      margin-right: auto
+      border-top: 2px solid #e1e1e1
+      padding-top: 25px
+      margin-bottom: 15px
+      .academy-about-numbers-item
+        display: inline-block
+        border-bottom: none
+        width: 49%
+        vertical-align: top
+        padding-left: 0px
+        padding-bottom: 0px
+        margin-bottom: 0px
+        .numbers-item__value
+          font-size: 75px
+        .numbers-item__title
+          font-size: 12px
+
+    .academy-about-container
+      .academy-about-bg
+        height: 210px
+        background-position: center center
+
+    .academy-about-info
+      .about-info-title
+        font-size: 20px
+      .about-info-category
+        margin-bottom: 10px
+        .about-info-category-item
+          width: 100%
+          float: none
+          background-position: 69% 10%
+          height: 300px
+          .about-info-category-item__title
+            font-size: 20px
+            left: 20px
+            top: 100px
+          .about-info-category-item-btn
+            top: 180px
+          .about-info-category-item-btn
+            width: 280px
+            margin-right: auto
+            margin-left: auto
+            position: absolute
+            bottom: 0px
+            left: 0px
+            right: 0px
+            text-align: center
+            padding: 0
+            &:before
+              right: 80px
+
+          &.category-item--children
+            .about-info-category-item__title
+              left: 20px
+            .about-info-category-item-btn
+              left: 20px
+              margin-left: 0px

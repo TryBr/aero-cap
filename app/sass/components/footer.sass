@@ -1,0 +1,65 @@
+.footer
+  border-top: 1px solid #ebebeb
+  height: 88px
+  background: #fff
+  .footer-container
+    position: relative
+    width: 960px
+    margin: 0 auto
+  .footer-copyright
+    font-size: 14px
+    color: #000000
+    font-family: "Gilroy-Regular"
+    line-height: 84px
+    padding-left: 4px
+    float: left
+  .footer-to-top-btn
+    float: right
+    font-size: 14px
+    color: #012335
+    font-family: "Gilroy-SemiBold"
+    position: relative
+    transition: all .15s
+    -webkit-transition: all .15s
+    padding-right: 42px
+    margin-top: 33px
+    margin-right: 2px
+    cursor: pointer
+    text-decoration: none
+    &:before
+      content: ''
+      position: absolute
+      top: 0px
+      right: 0px
+      width: 21px
+      height: 21px
+      background: url("../img/sprite/to-top-btn.png") #fff no-repeat center center
+    &:hover
+      color: #ff9813
+      &:before
+        background: url("../img/sprite/to-top-btn--hover.png") #fff no-repeat center center
+
+
+@media only screen and (max-width : 1299px)
+  .footer
+    .footer-container
+      width: auto
+      margin: 0 24px
+      overflow: hidden
+
+
+@media only screen and (max-width : 767px)
+  .footer
+    height: 72px
+    padding-top: 24px
+    .footer-container
+      margin-right: 20px
+      margin-left: 20px
+      .footer-copyright
+        font-size: 12px
+        line-height: 15px
+        width: 185px
+        padding: 0px
+      .footer-to-top-btn
+        text-indent: -99999999999999999999999999px
+        margin-top: 0px

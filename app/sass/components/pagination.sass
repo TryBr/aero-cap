@@ -1,0 +1,97 @@
+.pagination
+  position: relative
+  margin-top: 21px
+  &.pagination-oils
+    padding-bottom: 70px
+  .pagination-items
+    margin: 0 auto
+    width: 280px
+  .pagination-item
+    background: #f5f5f5
+    width: 36px
+    height: 36px
+    margin: 0 10px
+    text-align: center
+    line-height: 36px
+    float: left
+    transition: all .15s
+    -webkit-transition: all .15s
+
+    .pagination-item__link
+      color: #000000
+      text-decoration: none !important
+      font-size: 16px
+      display: block
+      font-family: "Gilroy-Regular"
+    &:hover
+      background: #ff9813
+      .pagination-item__link
+        color: #fff
+    &.active
+      background: #083e6f
+      .pagination-item__link
+        color: #fff
+    &.pagination-item-separator
+      line-height: 36px
+      background: none !important
+      font-size: 16px
+      font-family: "Gilroy-Regular"
+      &:hover
+        background: none !important
+        .pagination-item__link
+          color: #fff none !important
+  .pagination-item-prev
+    position: absolute
+    top: 8px
+    left: 0px
+    width: auto
+    background: none !important
+    transition: all .15s
+    -webkit-transition: all .15s
+    .pagination-item__link
+      text-decoration: none !important
+      color: #003c73
+      font-size: 16px
+      font-family: "Gilroy-Regular"
+      border-bottom: 1px solid transparent
+      transition: all .15s
+      -webkit-transition: all .15s
+    &:hover
+      .pagination-item__link
+        border-bottom: 1px solid #003c73
+
+  .pagination-item-next
+    position: absolute
+    top: 8px
+    right: 0px
+    width: auto
+    background: none !important
+    transition: all .15s
+    -webkit-transition: all .15s
+    .pagination-item__link
+      text-decoration: none !important
+      color: #003c73
+      font-size: 16px
+      font-family: "Gilroy-Regular"
+      transition: all .15s
+      -webkit-transition: all .15s
+    &:hover
+      .pagination-item__link
+        border-bottom: 1px solid #003c73
+
+@media only screen and (max-width : 1299px)
+  .pagination
+    width: 720px
+    margin-right: auto
+    margin-left: auto
+
+
+@media only screen and (max-width : 767px)
+  .pagination
+    margin-left: auto
+    margin-right: auto
+    width: 280px
+    .pagination-item-prev
+      display: none
+    .pagination-item-next
+      display: none

@@ -1,0 +1,44 @@
+.sidebar .sidebar-header .sidebar-header-info {
+  position: relative;
+  padding-top: 13px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item {
+  float: left;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--flag {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: 0px -29px;
+  width: 19px;
+  height: 16px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--t {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -58px -18px;
+  width: 8px;
+  height: 18px;
+}
+
+.sidebar .sidebar-header .sidebar-header-info .info-item .info-item__icon.info-item__icon--water {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -58px 0px;
+  width: 12px;
+  height: 18px;
+}
+
+.sidebar .sidebar-header .sidebar-header-language .language-item .language-item__icon.language-item__icon--rus {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -34px -29px;
+  width: 15px;
+  height: 15px;
+}
+
+.sidebar .sidebar-header .sidebar-header-language .language-item .language-item__icon.language-item__icon--eng {
+  background: url("../img/icons/sprite.png") no-repeat;
+  background-position: -19px -29px;
+  width: 15px;
+  height: 15px;
+}
+/*# sourceMappingURL=sidebar.css.map */

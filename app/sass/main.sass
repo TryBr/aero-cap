@@ -1,0 +1,126 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+//*
+//  transition: all .15s
+//  -webkit-transition: all .15s
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html
+	height: 100%
+
+body
+	padding-bottom: 0px
+	margin: 0 auto
+	position: relative
+
+.clearfix:after
+	content: ""
+	display: table
+	clear: both
+
+input
+	-webkit-appearance: none
+	-moz-appearance: none
+	appearance: none
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.hidden
+	display: none
+
+.main
+	background: #e2e5e6
+	background: -moz-linear-gradient(top, #e2e5e6 2%, #ffffff 29%)
+	background: -webkit-linear-gradient(top, #e2e5e6 2%,#ffffff 29%)
+	background: linear-gradient(to bottom, #e2e5e6 2%,#ffffff 29%)
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e5e6', endColorstr='#ffffff',GradientType=0 )
+
+	.content
+		margin: 0 0 0 280px
+	.sidebar
+		width: 280px
+		max-width: 280px
+		background: #083e6f
+		position: fixed
+		left: 0
+		top: 0
+		bottom: 0
+		color: #fff
+		z-index: 10
+
+.container-fixed
+	width: 960px
+	margin: 0 auto
+	position: relative
+
+// components
+@import "components/sidebar.sass"
+@import "components/banner.sass"
+@import "components/categories.sass"
+@import "components/news.sass"
+@import "components/about.sass"
+@import "components/map.sass"
+@import "components/our-friends.sass"
+@import "components/footer.sass"
+@import "components/page.sass"
+@import "components/sidebar-menu.sass"
+@import "components/breadcrumbs.sass"
+@import "components/academy.sass"
+@import "components/news-additional-bottom.sass"
+@import "components/feedback.sass"
+@import "components/news-page.sass"
+@import "components/pagination.sass"
+@import "components/aerodrome.sass"
+@import "components/services.sass"
+@import "components/trackers.sass"
+@import "components/sport.sass"
+@import "components/photo-video.sass"
+@import "components/menu-mobile.sass"
+@import "components/left-menu.sass"
+@import "components/popups.sass"
+
+
+@media only screen and (max-width : 1299px)
+	.main
+		.sidebar
+			display: none
+		.content
+			margin: 0 auto
+	.container-fixed
+		width: auto

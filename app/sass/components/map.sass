@@ -1,0 +1,126 @@
+.map
+  position: relative
+  #map
+    width: 100%
+    height: 100%
+    padding: 0
+    margin: 0
+  //background: url("../img/map.jpg") no-repeat center center
+  //background-size: cover
+  height: 595px
+
+  .ymaps-2-1-65-controls__toolbar_left
+    display: none !important
+  .ymaps-2-1-65-map-copyrights-promo
+    display: none !important
+  .ymaps-2-1-65-controls-pane
+    width: 4%!important
+    left: auto !important
+    right: 0 !important
+    //.ymaps-2-1-65-zoom__scale
+
+
+  .map-contacts
+    position: absolute
+    top: 115px
+    left: 268px
+    background: #ffffff
+    width: 550px
+    height: 366px
+    padding-left: 66px
+    padding-top: 71px
+    .map-contacts-logo
+      position: absolute
+      bottom: 73px
+      right: 49px
+      background: url("../img/sprite/contacts-logo.png") no-repeat center center
+      width: 136px
+      height: 76px
+    .map-contacts__title
+      font-size: 32px
+      color: #012335
+      font-family: "Gilroy-Semibold"
+      position: relative
+      margin-bottom: 28px
+      padding-bottom: 25px
+      &:before
+        content: ''
+        height: 2px
+        width: 92px
+        background: #e1e1e1
+        position: absolute
+        bottom: 0px
+        left: 1px
+    .map-contacts__info
+      color: #012335
+      font-size: 16px
+      font-family: "Gilroy-Regular"
+      width: 365px
+      margin-bottom: 29px
+    .map-contacts__phone
+      color: #012335
+      font-size: 20px
+      font-family: "Gilroy-Semibold"
+      margin-bottom: 16px
+      .map-contacts__icon
+        width: 17px
+        height: 17px
+        display: inline-block
+        margin-right: 16px
+        background: url("../img/sprite/contacts-phone-icon.png") no-repeat center center
+    .map-contacts__email
+      .map-contacts__icon
+        width: 17px
+        height: 14px
+        display: inline-block
+        background: url("../img/sprite/contacts-email-icon.png") no-repeat center center
+        margin-right: 16px
+      .map-contacts__link
+        color: #083e6f
+        font-size: 16px
+        font-family: "Gilroy-Regular"
+        transition: all .15s
+        -webkit-transition: all .15s
+        text-decoration: none
+        border-bottom: 1px solid #083e6f
+        &:hover
+          border-bottom: 1px solid transparent
+
+
+@media only screen and (max-width : 1299px)
+  .map
+    .map-contacts
+      width: 720px
+      height: 300px
+      margin: auto
+      left: 0px
+      right: 0px
+      padding: 40px 60px
+      top: auto
+      bottom: 35px
+
+
+
+@media only screen and (max-width : 767px)
+  .map
+    height: 400px
+    padding-bottom: 265px
+    .map-contacts
+      position: relative
+      width: 100%
+      padding-top: 30px
+      padding-left: 20px
+      padding-right: 20px
+      padding-bottom: 40px
+      border-bottom: 0px solid #ebebeb
+      .map-contacts-logo
+        display: none
+      .map-contacts__title
+        font-size: 20px
+      .map-contacts__info
+        font-size: 14px
+        width: auto
+      .map-contacts__phone
+        font-size: 16px
+      .map-contacts__email
+        font-size: 14px

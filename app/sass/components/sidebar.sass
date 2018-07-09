@@ -1,0 +1,171 @@
+.sidebar
+  .sidebar-header
+    .sidebar-header-info
+      position: relative
+      padding-top: 14px
+      .info-item
+        float: left
+        font-family: "Gilroy-Regular"
+        font-size: 11px
+        &.info-item--flag
+          margin-left: 19px
+        &.info-item--t
+          margin-left: 23px
+        &.info-item--water
+          margin-left: 29px
+        .info-item__icon
+          float: left
+          &.info-item__icon--flag
+            background: url("../img/sprite/info-item__icon--flag.png") no-repeat
+            width: 19px
+            height: 16px
+            margin-right: 9px
+          &.info-item__icon--t
+            background: url("../img/sprite/info-item__icon--t.png") no-repeat
+            width: 8px
+            height: 18px
+            margin-right: 10px
+          &.info-item__icon--water
+            background: url("../img/sprite/info-item__icon--water.png") no-repeat
+            width: 12px
+            height: 18px
+            margin-right: 11px
+        .info-item__value
+          float: left
+          margin-top: 2px
+    .sidebar-header-language
+      border-top: 1px solid #2f5b82
+      border-bottom: 1px solid #2f5b82
+      margin-top: 18px
+      .language-item
+        float: left
+        padding: 15.5px 15px
+        font-family: "Gilroy-Regular"
+        font-size: 12px
+        cursor: pointer
+        &.active
+          .language-item__icon
+            opacity: 0.5 !important
+          .language-item__value
+            opacity: 0.5 !important
+        *
+          transition: all .15s
+          -webkit-transition: all .15s
+        &:hover
+          .language-item__icon
+            opacity: 0.5
+          .language-item__value
+            opacity: 0.5
+        &.language-item--rus
+          border-right: 1px solid #2f5b82
+          width: 141px
+        .language-item__icon
+          float: left
+          &.language-item__icon--rus
+            background: url("../img/sprite/language-item__icon--rus.png") no-repeat
+            width: 15px
+            height: 15px
+            margin-left: 24px
+            margin-right: 6px
+          &.language-item__icon--eng
+            background: url("../img/sprite/language-item__icon--eng.png") no-repeat
+            width: 15px
+            height: 15px
+            margin-left: 24px
+            margin-right: 6px
+        .language-item__value
+          float: left
+
+    .sidebar-logo
+      margin-top: 38px
+      .sidebar-logo__link
+        display: block
+      .sidebar-logo__img
+        background: url("../img/logo.png") no-repeat
+        width: 205px
+        height: 115px
+        margin: 0 auto
+
+    .sidebar-menu
+      list-style: none
+      padding: 0px
+      margin: 0 auto
+      margin-top: 40px
+      .sidebar-menu__item
+        text-align: center
+        //border-bottom: 1px solid #2f5b82
+        &:nth-child(1)
+          .sidebar-menu__link
+            padding: 0 45px
+            padding-bottom: 14px
+            padding-top: 14px
+        &:last-child
+          border-bottom: 0px
+      .sidebar-menu__link
+        color: #ffffff
+        text-decoration: none
+        font-size: 16px
+        font-family: "Gilroy-Regular"
+        display: block
+        padding-bottom: 14px
+        padding-top: 14px
+        transition: all .15s
+        -webkit-transition: all .15s
+        &:hover
+          background: #17263e
+
+    .sidebar-contacts
+      border-top: 1px solid #2f5b82
+      text-align: center
+      padding-top: 26px
+      margin-left: -10px
+      position: absolute
+      left: 0
+      right: 0
+      bottom: 30px
+      .sidebar-contacts__phone
+        font-size: 24px
+        color: #ffc613
+        font-family: "Gilroy-Semibold"
+        text-decoration: none
+      .sidebar-contacts-social
+        width: 85px
+        margin: 0 auto
+        margin-top: 17px
+        .social-item
+          float: left
+          margin-right: 14px
+          position: relative
+          transition: all .15s
+          -webkit-transition: all .15s
+          .social-item__link
+            position: absolute
+            width: 100%
+            height: 100%
+            display: block
+            top: 0px
+            left: 0px
+            right: 0px
+          &:last-child
+            margin-right: 0px
+          &.social-item--fb
+            background: url("../img/sprite/social-item--fb.png") no-repeat
+            width: 29px
+            height: 29px
+            margin-left: 12px
+            &:hover
+              background: url("../img/sprite/social-item--fb--hover.png") no-repeat
+          &.social-item--email
+            background: url("../img/sprite/social-item--email.png") no-repeat
+            width: 29px
+            height: 29px
+            &:hover
+              background: url("../img/sprite/social-item--email--hover.png") no-repeat
+
+
+
+
+
+@media only screen and (max-width : 1299px)
+  .sidebar
+    display: none

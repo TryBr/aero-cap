@@ -1,0 +1,334 @@
+.sport-page
+  &.sport-page-news
+    margin-bottom: 70px
+.sport-rules
+  margin-top: 61px
+  .sport-rules-item
+    border: 2px solid #ebebeb
+    border-bottom: 5px solid #ebebeb
+    padding-bottom: 36px
+    margin-bottom: 50px
+    transition: all .15s
+    -webkit-transition: all .15s
+    *
+      transition: all .15s
+      -webkit-transition: all .15s
+    .sport-rules-item-info
+      position: relative
+      .sport-rules-item-info__title
+        font-size: 22px
+        color: #141414
+        font-family: "Gilroy-Medium"
+        margin-top: 35px
+        margin-left: 38px
+      .sport-rules-item-info-docs
+        font-size: 12px
+        color: #736b6b
+        font-family: "Gilroy-Medium"
+        position: absolute
+        top: 6px
+        left: 570px
+        text-transform: uppercase
+        letter-spacing: 1.2px
+        &:before
+          content: ''
+          position: absolute
+          top: -2px
+          left: -32px
+          width: 16px
+          height: 16px
+          background: url("../img/sprite/docs__icon.png") no-repeat
+      .sport-rules-item-info-nav
+        width: 150px
+        position: absolute
+        top: -4px
+        right: 34px
+        cursor: pointer
+        &:before
+          content: ''
+          position: absolute
+          top: -12px
+          left: -48px
+          width: 1px
+          height: 61px
+          background: #ebebeb
+        .info-nav__title
+          color: #0143a4
+          font-size: 12px
+          font-family: "Gilroy-Medium"
+          text-transform: uppercase
+          float: left
+          margin-top: 10px
+          width: 113px
+          &.info-nav__title--show
+            display: block
+          &.info-nav__title--hide
+            display: none
+        .info-nav__btn
+          background: url("../img/sprite/more-btn.png") no-repeat
+          width: 36px
+          height: 36px
+          float: left
+        &:hover
+          .info-nav__title
+            color: #ff9813
+          .info-nav__btn
+            background: url("../img/sprite/more-btn--hover.png") no-repeat
+
+    .sport-rules-item-content
+      border-top: 2px solid #ebebeb
+      margin-top: 36px
+      padding-top: 32px
+      padding-left: 40px
+      padding-right: 40px
+      padding-bottom: 8px
+      display: none
+      .sport-rules-item-content-doc
+        position: relative
+        margin-bottom: 21px
+        &:last-child
+          margin-bottom: 0px
+        &:before
+          content: ''
+          background: url("../img/sprite/doc-download__icon.png") no-repeat
+          width: 16px
+          height: 18px
+          position: absolute
+          top: 2px
+          left: 0px
+        .sport-rules-item-content-doc__link
+          font-size: 16px
+          color: #083e6f
+          font-family: "Gilroy-Regular"
+          text-decoration: none
+          border-bottom: 1px solid transparent
+          margin-left: 39px
+          &:hover
+            border-bottom: 1px solid #083e6f
+      &.content-active
+        display: block
+
+    &.sport-rules-item-active
+      .sport-rules-item-info-nav
+        .info-nav__title
+          &.info-nav__title--show
+            display: none
+          &.info-nav__title--hide
+            display: block
+        .info-nav__title
+          color: #7b7b7b !important
+        .info-nav__btn
+          background: url("../img/sprite/more-btn-unactive.png") no-repeat !important
+          width: 36px
+          height: 36px
+          float: left
+      &:hover
+        .info-nav__title
+          color: #515050 !important
+        .info-nav__btn
+          background: url("../img/sprite/more-btn-unactive--hover.png") no-repeat !important
+
+.sport-schedule
+  .schedule-table
+    margin-bottom: 80px
+    border-collapse: collapse
+    width: 100%
+    border-bottom: 5px solid #ebebeb
+    .table-head
+      color: #083e6f
+      font-size: 16px
+      font-family: "Gilroy-SemiBold"
+      background: #ffc613
+      border-left: 2px solid #ffc613
+      border-right: 2px solid #ffc613
+      th
+        padding: 18px 0px
+        font-family: "Gilroy-SemiBold"
+        text-align: left
+        padding-left: 32px !important
+    .table-row
+      color: #000000
+      font-size: 16px
+      font-family: "Gilroy-Regular"
+      text-align: left
+      border-left: 2px solid #ebebeb
+      border-right: 2px solid #ebebeb
+      &:nth-child(odd)
+        background: #f5f5f5
+      td
+        padding: 16px 0px
+        padding-left: 32px !important
+
+.sport-news
+  .news-item
+    position: relative
+    width: 280px
+    border-bottom: 2px solid #c9c9c9
+    margin-bottom: 50px
+    margin-right: 60px
+    float: left
+    &:nth-child(3n+3)
+      margin-right: 0px
+    .news-item-photo
+      position: relative
+      margin-bottom: 7px
+      height: 175px
+      background-size: cover !important
+      .news-list-photo__link
+        position: absolute
+        z-index: 1
+        width: 100%
+        height: 100%
+    .news-item-title-wrapper
+      height: 90px
+      overflow: hidden
+      margin-bottom: 58px
+    .news-item-title
+      height: 80px
+      overflow: hidden
+      margin-bottom: 10px
+      .news-item__title
+        font-size: 18px
+        color: #000000
+        font-family: "Gilroy-Medium"
+        line-height: 28px
+        text-decoration: none
+        border-bottom: 1px solid transparent
+        transition: all .15s
+        -webkit-transition: all .15s
+        display: inline
+        &:hover
+          border-bottom: 1px solid #083e6f
+          color: #083e6f
+    .news-item__description
+      font-size: 16px
+      color: #000000
+      font-family: "Gilroy-Regular"
+      line-height: 23px
+      margin-top: 60px
+      display: none
+    .news-item-info
+      position: relative
+      bottom: 17px
+      left: 0px
+      font-size: 14px
+      color: #7f7f7f
+      font-family: "Gilroy-Regular"
+      padding-left: 30px
+      div
+        display: inline-block
+      .news-item-info__icon
+        width: 16px
+        height: 16px
+        background: url("../img/sprite/news-list-info__icon.png") no-repeat center center
+        position: absolute
+        top: 0px
+        left: 0px
+      .news-item-info__separator
+        margin-left: 4px
+
+
+@media only screen and (max-width : 1299px)
+  .sport-rules
+    margin-left: 24px
+    margin-right: 24px
+    .sport-rules-item
+      .sport-rules-item-info
+        .sport-rules-item-info-docs
+          display: none
+        .sport-rules-item-info-nav
+          &:before
+            display: none
+  .sport-schedule
+    margin-left: 24px
+    margin-right: 24px
+
+  .sport-news
+    width: 720px
+    margin-right: auto
+    margin-left: auto
+    .news-item
+      position: relative
+      width: 345px
+      border-bottom: 2px solid #c9c9c9
+      margin-right: 30px
+      float: left
+      margin-bottom: 52px
+      &:nth-child(2n+2)
+        margin-right: 0px
+      &:nth-child(3n+3)
+        margin-right: 0px
+      &:nth-child(6n+6)
+        margin-right: 0px
+      &:nth-child(3)
+        margin-right: 30px
+      .news-item-photo
+        width: 100%
+
+@media only screen and (max-width : 767px)
+  .sport-rules
+    margin-left: 20px
+    margin-right: 20px
+    width: auto
+    .sport-rules-item
+      .sport-rules-item-info
+        .sport-rules-item-info__title
+          font-size: 16px
+          margin-left: 18px
+        .sport-rules-item-info-nav
+          right: 10px
+          width: 34px
+          .info-nav__title
+            display: none !important
+      .sport-rules-item-content
+        padding-left: 17px
+        padding-top: 30px
+        padding-right: 17px
+        padding-bottom: 30px
+        .sport-rules-item-content-doc
+          padding-left: 24px
+          .sport-rules-item-content-doc__link
+            font-size: 14px
+            margin-left: 0px
+  .sport-schedule
+    margin-left: 20px
+    margin-right: 20px
+    width: auto
+    overflow-x: scroll
+    overflow-y: hidden
+  .sport-news
+    margin-left: 20px
+    margin-right: 20px
+    .news-item
+      width: 100%
+      margin-right: 0px
+      margin-bottom: 40px !important
+      .news-item-info
+        font-size: 12px
+      .news-item-title-wrapper
+        margin-bottom: 30px !important
+        .news-item__title
+          font-size: 14px !important
+      .news-item__description
+        display: none !important
+      &:nth-child(2n+2)
+        margin-right: 0px !important
+      &:nth-child(1)
+        width: 100%
+        margin-right: 0px
+        .news-item__title
+          font-size: 18px
+        .news-item-photo
+          height: 175px
+          margin-bottom: 7px
+      &:nth-child(2)
+        width: 100%
+        margin-right: 0px
+        .news-item-title-wrapper
+          margin-bottom: 40px
+        .news-item-photo
+          height: 175px
+          margin-bottom: 7px
+
+      &:nth-child(3)
+        margin-right: 0px
