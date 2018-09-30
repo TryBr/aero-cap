@@ -66,7 +66,6 @@ $( document ).ready(function() {
     });
 
     // BANNER NAV
-    //mySwiper.slideTo(index, speed, runCallbacks);
     $(".swiper-pagination-main").find(".swiper-pagination-bullet").each(function(indx, element){
         $(this).attr("slide-number", indx);
     });
@@ -93,8 +92,15 @@ $( document ).ready(function() {
         }
     });
 
+    // BANNER FIRST ITEM ANIMATION
+    setTimeout(function() {
+        $(".swiper-pagination-bullet-active").addClass("swiper-pagination-bullet-animation");
+    }, 100);
+
     // BANNER CHANGE
     swiperMainBanner.on('slideChange', function () {
+        $(".swiper-pagination-bullet").removeClass("swiper-pagination-bullet-animation");
+        $(".swiper-pagination-bullet-active").addClass("swiper-pagination-bullet-animation");
         var activeIndex = swiperMainBanner.activeIndex;
         var slideNumberModify = parseInt(activeIndex) + 1;
         $(".banner-nav__val").text(slideNumberModify);

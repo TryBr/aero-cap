@@ -10,7 +10,8 @@
       position: relative
       &:before
         content: ''
-        background: url("../img/sprite/feedback__icon.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -129px -116px
         position: absolute
         width: 58px
         height: 32px
@@ -152,9 +153,9 @@
           &::-moz-placeholder
             color: #ff0000
           &:-ms-input-placeholder
-            color: #be2a2a
+            color: #ff0000
           &:-moz-placeholder
-            color: #be2a2a
+            color: #ff0000
         &.not--empty
           & + .form-field__placeholder
             opacity: 0
@@ -201,16 +202,17 @@
           position: absolute
           top: 6px
           left: 5px
-          background: url("../img/sprite/checkbox__checked.png")
+          background: url("../img/sprite.png")
+          background-position: -51px -519px
       &.invalid
-        color: #be2a2a
+        color: #ff0000
         a
-          color: #be2a2a
+          color: #ff0000
 
         .form-check__checkbox
-          border: 1px solid #be2a2a
+          border: 1px solid #ff0000
         .form-check-label
-          color: #be2a2a
+          color: #ff0000
     .form__btn
       float: right
       width: 200px
@@ -237,10 +239,14 @@
 
 @media only screen and (max-width : 1299px)
   .feedback
+    margin-top: 32px
     .feedback-form-wrapper
       width: 720px
       margin-left: auto
       margin-right: auto
+      .feedback-form-container
+        &:before
+          right: 8px
       .feedback-form-left
         margin-right: 25px
         width: 260px

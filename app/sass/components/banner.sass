@@ -26,16 +26,19 @@
         left: -166px
         width: 16px
         height: 26px
-        background: url("../img/sprite/banner-nav-prev.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -509px -320px
+        width: 16px
+        height: 26px
         cursor: pointer
-        transition: all .15s
-        -webkit-transition: all .15s
         &.disabled
           opacity: 0.5
           &:hover
-            background: url("../img/sprite/banner-nav-prev.png") no-repeat !important
+            background: url("../img/sprite.png") no-repeat !important
+            background-position: -509px -320px !important
         &:hover
-          background: url("../img/sprite/banner-nav-prev--hover.png") no-repeat
+          background: url("../img/sprite.png") no-repeat
+          background-position: -509px -254px
       .banner-nav-next-btn
         position: absolute
         top: 6px
@@ -43,16 +46,17 @@
         right: 0px
         width: 16px
         height: 26px
-        background: url("../img/sprite/banner-nav-next.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -509px -188px
         cursor: pointer
-        transition: all .15s
-        -webkit-transition: all .15s
         &.disabled
           opacity: 0.5
           &:hover
-            background: url("../img/sprite/banner-nav-next.png") no-repeat !important
+            background: url("../img/sprite.png") no-repeat !important
+            background-position: -509px -188px !important
         &:hover
-          background: url("../img/sprite/banner-nav-next--hover.png") no-repeat
+          background: url("../img/sprite.png") no-repeat
+          background-position: -509px -122px
 
   .swiper-container
     width: 100%
@@ -141,6 +145,21 @@
           position: absolute
       &.swiper-pagination-bullet-active
         position: relative
+        //&:before
+        //  content: ''
+        //  width: 100%
+        //  height: 2px
+        //  background: #e9b41b
+        //  left: 0px
+        //  top: 0px
+        //  z-index: 1
+        //  display: block
+        //  -webkit-transition: all 5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+        //  transition:         all 5s cubic-bezier(0.55, 0.085, 0.68, 0.53)
+        //&:after
+        //  color: #e9b41b
+      &.swiper-pagination-bullet-animation
+        position: relative
         &:before
           content: ''
           width: 100%
@@ -192,7 +211,8 @@
       display: block
       &:before
         content: ''
-        background: url("../img/sprite/more-btn-arrow.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -381px -305px
         position: absolute
         top: 19px
         right: 23px
@@ -226,7 +246,7 @@
 
 @media only screen and (max-width : 767px)
   .banner
-    height: 340px
+    height: 380px
     .banner-nav-container
       display: none
     .banner-info
@@ -261,9 +281,9 @@
       left: 0px
       right: 0px
       margin: 0 auto
-    .swiper-pagination
-      bottom: 216px
-      left: -77px
-      width: 160%
-      .swiper-pagination-bullet
-        margin: 0px 6px
+      .swiper-pagination
+        left: -76px
+        bottom: 234px
+        width: 160%
+        .swiper-pagination-bullet
+          margin: 0px 6px

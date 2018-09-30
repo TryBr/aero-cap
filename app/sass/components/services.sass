@@ -29,11 +29,6 @@
     height: 335px
     float: left
     background: #ffffff
-    transition: all .15s
-    -webkit-transition: all .15s
-    *
-      transition: all .15s
-      -webkit-transition: all .15s
     .services-item__link
       z-index: 2
       position: absolute
@@ -76,21 +71,22 @@
       position: absolute
       left: 32px
       bottom: 32px
-      background: url("../img/sprite/categories-item__btn.png") no-repeat
+      background: url("../img/sprite.png") no-repeat
+      background-position: -86px -305px
       width: 36px
       height: 36px
-      transition: all .15s
-      -webkit-transition: all .15s
       text-decoration: none !important
       &:hover
-        background: url("../img/sprite/categories-item__btn--hover.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -427px -243px
     &:hover
       background: #083e6f
       .services-item__title
         color: #fff
         border-bottom: 1px solid #fff
       .services-item-btn
-        background: url("../img/sprite/categories-item__btn--hover.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -427px -243px
 
 
 .services-detail
@@ -240,7 +236,8 @@
 .services-detail-back
   margin-left: 0px
   .services-detail-back__icon
-    background: url("../img/sprite/page-section-back__icon.png") no-repeat
+    background: url("../img/sprite.png") no-repeat
+    background-position: -458px -459px
     width: 12px
     height: 10px
     display: inline-block

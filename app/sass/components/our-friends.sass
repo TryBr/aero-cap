@@ -20,26 +20,58 @@
       height: 50px
       border: 1px solid #e1e1e1
       background: #fff
-      background: url("../img/sprite/nav-arrow-next.png") #fff no-repeat 16px 18px
       float: left
       cursor: pointer
       margin-left: -1px
-      transition: all .15s
-      -webkit-transition: all .15s
+      position: relative
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -233px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-next--hover.png") #f8f8f8 no-repeat 16px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -291px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
     .our-friends-nav-prev-btn
       width: 54px
       height: 50px
       border: 1px solid #e1e1e1
       background: #fff
-      background: url("../img/sprite/nav-arrow-prev.png") #fff no-repeat 20px 18px
       float: left
       cursor: pointer
-      transition: all .15s
-      -webkit-transition: all .15s
+      position: relative
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -175px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-prev--hover.png") #f8f8f8 no-repeat 20px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -117px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
   .our-friends-slider
     height: auto
     margin-bottom: 100px

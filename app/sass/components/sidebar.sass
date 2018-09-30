@@ -16,17 +16,20 @@
         .info-item__icon
           float: left
           &.info-item__icon--flag
-            background: url("../img/sprite/info-item__icon--flag.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -415px -386px
             width: 19px
             height: 16px
             margin-right: 9px
           &.info-item__icon--t
-            background: url("../img/sprite/info-item__icon--t.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -570px -390px
             width: 8px
             height: 18px
             margin-right: 10px
           &.info-item__icon--water
-            background: url("../img/sprite/info-item__icon--water.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -570px -280px
             width: 12px
             height: 18px
             margin-right: 11px
@@ -62,13 +65,15 @@
         .language-item__icon
           float: left
           &.language-item__icon--rus
-            background: url("../img/sprite/language-item__icon--rus.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -570px -170px
             width: 15px
             height: 15px
             margin-left: 24px
             margin-right: 6px
           &.language-item__icon--eng
-            background: url("../img/sprite/language-item__icon--eng.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -570px -225px
             width: 15px
             height: 15px
             margin-left: 24px
@@ -136,8 +141,6 @@
           float: left
           margin-right: 14px
           position: relative
-          transition: all .15s
-          -webkit-transition: all .15s
           .social-item__link
             position: absolute
             width: 100%
@@ -149,21 +152,48 @@
           &:last-child
             margin-right: 0px
           &.social-item--fb
-            background: url("../img/sprite/social-item--fb.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -73px -386px
             width: 29px
             height: 29px
             margin-left: 12px
             &:hover
-              background: url("../img/sprite/social-item--fb--hover.png") no-repeat
+              background: url("../img/sprite.png") no-repeat
+              background-position: -211px -386px
           &.social-item--email
-            background: url("../img/sprite/social-item--email.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -142px -386px
             width: 29px
             height: 29px
             &:hover
-              background: url("../img/sprite/social-item--email--hover.png") no-repeat
+              background: url("../img/sprite.png") no-repeat
+              background-position: -227px -116px
 
 
+@media (min-height: 650px) and (max-height: 800px)
+  .sidebar
+    .sidebar-header
+      .sidebar-contacts
+        padding-top: 10px
+        bottom: 10px
+        .sidebar-contacts__phone
+          font-size: 20px
+        .sidebar-contacts-social
+          margin-top: 10px
 
+
+@media (min-height: 500px) and (max-height: 649px)
+  .sidebar
+    .sidebar-header
+      .sidebar-logo
+        margin-top: 5px
+      .sidebar-contacts
+        padding-top: 10px
+        bottom: 10px
+        .sidebar-contacts__phone
+          font-size: 20px
+        .sidebar-contacts-social
+          margin-top: 10px
 
 
 @media only screen and (max-width : 1299px)

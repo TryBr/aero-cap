@@ -61,7 +61,8 @@
         .news-item-info__icon
           width: 16px
           height: 16px
-          background: url("../img/sprite/news-list-info__icon.png") no-repeat center center
+          background: url("../img/sprite.png") no-repeat center center
+          background-position: -570px -58px
           position: absolute
           top: 0px
           left: 0px
@@ -78,7 +79,8 @@
           position: relative
           &:before
             content: ''
-            background: url("../img/sprite/news-photo-icon.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -427px -319px
             width: 25px
             height: 25px
             position: absolute
@@ -93,7 +95,8 @@
           margin-left: 10px
           &:before
             content: ''
-            background: url("../img/sprite/news-video-icon.png") no-repeat
+            background: url("../img/sprite.png") no-repeat
+            background-position: -280px -386px
             width: 25px
             height: 25px
             position: absolute
@@ -137,7 +140,8 @@
   .photo-page-back
     margin-left: 4px
     .photo-page-back__icon
-      background: url("../img/sprite/page-section-back__icon.png") no-repeat
+      background: url("../img/sprite.png") no-repeat
+      background-position: -458px -459px
       width: 12px
       height: 10px
       display: inline-block
@@ -153,6 +157,11 @@
       -webkit-transition: all .15s
       &:hover
         border-bottom: 1px solid #003c73
+
+  .photo-page-share
+    position: absolute
+    right: 0px
+    bottom: 0px
 
 @media only screen and (max-width : 1299px)
   .photo-video-page
@@ -185,6 +194,10 @@
 
     .photo-page-back
       margin-left: 24px
+
+    .photo-page-share
+      margin-right: 24px
+      bottom: 0px
 
     .photo-list
       width: 720px
@@ -291,3 +304,9 @@
 
     .photo-page-back
       margin-left: 20px
+
+    .photo-page-share
+      left: 20px
+      right: 0
+      bottom: -45px
+      margin-right: 0px

@@ -31,25 +31,58 @@
       width: 54px
       height: 50px
       border: 1px solid #e1e1e1
-      background: url("../img/sprite/nav-arrow-prev.png") #fff no-repeat 20px 18px
+      background: #fff
       float: left
       cursor: pointer
-      transition: all .15s
-      -webkit-transition: all .15s
+      position: relative
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -175px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-prev--hover.png") #f8f8f8 no-repeat 20px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -117px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
     .news-list-nav-next-btn
       width: 54px
       height: 50px
       border: 1px solid #e1e1e1
-      background: url("../img/sprite/nav-arrow-next.png") #fff no-repeat 16px 18px
+      background: #fff
       float: left
       cursor: pointer
       margin-left: -1px
-      transition: all .15s
-      -webkit-transition: all .15s
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -233px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-next--hover.png") #f8f8f8 no-repeat 16px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -291px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
 
   .news-list-general
 
@@ -99,7 +132,8 @@
       .news-list-info__icon
         width: 16px
         height: 16px
-        background: url("../img/sprite/news-list-info__icon.png") #fff no-repeat center center
+        background: url("../img/sprite.png") #fff no-repeat center center
+        background-position: -570px -58px
         position: absolute
         top: 0px
         left: 0px
@@ -163,7 +197,8 @@
         .news-list-info__icon
           width: 16px
           height: 16px
-          background: url("../img/sprite/news-list-info__icon.png") #fff no-repeat center center
+          background: url("../img/sprite.png") #fff no-repeat center center
+          background-position: -570px -58px
           position: absolute
           top: 0px
           left: 0px
@@ -183,7 +218,7 @@
   display: none
 
   .swiper-container
-    margin-top: 48px
+    margin-top: 63px
     width: auto
     margin-left: auto
     margin-right: auto
@@ -215,25 +250,58 @@
       width: 54px
       height: 50px
       border: 1px solid #e1e1e1
-      background: url("../img/sprite/nav-arrow-prev.png") #fff no-repeat 20px 18px
+      background: #fff
       float: left
       cursor: pointer
-      transition: all .15s
-      -webkit-transition: all .15s
+      position: relative
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -175px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-prev--hover.png") #f8f8f8 no-repeat 20px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -117px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
     .news-m-list-nav-next-btn
       width: 54px
       height: 50px
       border: 1px solid #e1e1e1
-      background: url("../img/sprite/nav-arrow-next.png") #fff no-repeat 16px 18px
+      background: #fff
       float: left
       cursor: pointer
       margin-left: -1px
-      transition: all .15s
-      -webkit-transition: all .15s
+      &:before
+        content: ''
+        background: url("../img/sprite.png") no-repeat
+        background-position: -233px -459px
+        width: 18px
+        height: 14px
+        position: absolute
+        top: 18px
+        right: 20px
       &:hover
-        background: url("../img/sprite/nav-arrow-next--hover.png") #f8f8f8 no-repeat 16px 18px
+        background: #f8f8f8
+        &:before
+          content: ''
+          background: url("../img/sprite.png") no-repeat
+          background-position: -291px -459px
+          width: 18px
+          height: 14px
+          position: absolute
+          top: 18px
+          right: 20px
 
   .news-list-item
     position: relative
@@ -291,7 +359,8 @@
       .news-list-info__icon
         width: 16px
         height: 16px
-        background: url("../img/sprite/news-list-info__icon.png") #fff no-repeat center center
+        background: url("../img/sprite.png") #fff no-repeat center center
+        background-position: -570px -58px
         position: absolute
         top: 0px
         left: 0px

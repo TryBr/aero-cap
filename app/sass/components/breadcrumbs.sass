@@ -15,12 +15,12 @@
       width: 12px
       height: 12px
       display: inline-block
-      transition: all .15s
-      -webkit-transition: all .15s
       &.icon-home
-        background: url("../img/sprite/home-icon.png") no-repeat center center
+        background: url("../img/sprite.png") no-repeat center center
+        background-position: -570px -448px
         &:hover
-          background: url("../img/sprite/home-icon--hover.png") no-repeat center center
+          background: url("../img/sprite.png") no-repeat center center
+          background-position: -406px -459px
   .breadcrumbs-item-separator
     margin: 0 13px
   .breadcrumbs-item__link
@@ -35,8 +35,9 @@
 @media only screen and (max-width : 1299px)
   .breadcrumbs
     width: auto
-    margin-right: 24px
-    margin-left: 24px
+    margin-right: 21px
+    margin-left: 21px
+    margin-top: 9px
 
 @media only screen and (max-width : 767px)
   .breadcrumbs
@@ -44,5 +45,8 @@
     overflow: hidden
     margin-left: 20px
     margin-right: 20px
+    padding-top: 3px
     .breadcrumbs-item
       font-size: 11px
+    .breadcrumbs-item-separator
+      margin: 0 9px

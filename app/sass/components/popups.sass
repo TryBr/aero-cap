@@ -9,7 +9,8 @@
     position: absolute
     bottom: 66px
     right: 55px
-    background: url("../img/sprite/popup__envelope__icon.png") no-repeat
+    background: url("../img/sprite.png") no-repeat
+    background-position: 0px -116px
     width: 89px
     height: 49px
   .popup-window__title
@@ -58,12 +59,17 @@
   border-radius: 0px !important
 
 .fancybox-close
-  background: url("../img/sprite/popup__close__icon.png") no-repeat
+  background: url("../img/sprite.png") no-repeat
+  background-position: -427px -163px
   width: 40px
   height: 40px
   top: -15px
   right: -20px
   cursor: pointer
+
+
+.fancybox-overlay
+  background: url("../img/fancybox_overlay.png") !important
 
 .fancybox-nav
   span
@@ -72,21 +78,25 @@
   &.fancybox-prev
     width: 60px
     height: 60px
-    background: url("../img/sprite/gallery-nav-prev.png") no-repeat center center
+    background: url("../img/sprite.png") no-repeat center center
+    background-position: 0px -205px
     top: 45%
     left: -100px
     &:hover
-      background: url("../img/sprite/gallery-nav-prev--hover.png") no-repeat center center
+      background: url("../img/sprite.png") no-repeat center center
+      background-position: -100px -205px
 
 
   &.fancybox-next
     width: 60px
     height: 60px
-    background: url("../img/sprite/gallery-nav-next.png") no-repeat center center
+    background: url("../img/sprite.png") no-repeat center center
+    background-position: -200px -205px
     top: 45%
     right: -100px
     &:hover
-      background: url("../img/sprite/gallery-nav-next--hover.png") no-repeat center center
+      background: url("../img/sprite.png") no-repeat center center
+      background-position: -327px 0px
 
 @media only screen and (max-width : 500px)
   .fancybox-inner

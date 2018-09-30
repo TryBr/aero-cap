@@ -35,17 +35,17 @@
       right: 38px
       z-index: 1
     .categories-item__btn
-      transition: all .15s
-      -webkit-transition: all .15s
       position: absolute
       bottom: 36px
       left: 36px
       z-index: 1
       width: 36px
       height: 36px
-      background: url("../img/sprite/categories-item__btn.png") no-repeat
+      background: url("../img/sprite.png") no-repeat
+      background-position: -86px -305px
       &:hover
-        background: url("../img/sprite/categories-item__btn--hover.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -427px -243px
     .categories-item__link
       position: absolute
       z-index: 2
@@ -57,19 +57,22 @@
       margin: 0 auto
       &:hover
         & + .categories-item__btn
-          background: url("../img/sprite/categories-item__btn--hover.png") no-repeat
+          background: url("../img/sprite.png") no-repeat
+          background-position: -427px -243px
 
     &.categories-item--goods
       background: url("../files/categories-goods.jpg") no-repeat
       .categories-item__icon
-        background: url("../img/sprite/categories-item__icon--goods.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -427px 0px
         width: 42px
         height: 42px
 
     &.categories-item--photos
       background: url("../files/categories-photos.jpg") no-repeat
       .categories-item__icon
-        background: url("../img/sprite/categories-item__icon--photos.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: 0px -305px
         width: 46px
         height: 41px
         bottom: 38px
@@ -77,7 +80,8 @@
     &.categories-item--hunters
       background: url("../files/categories-hunters.jpg") no-repeat
       .categories-item__icon
-        background: url("../img/sprite/categories-item__icon--hunters.png") no-repeat
+        background: url("../img/sprite.png") no-repeat
+        background-position: -427px -82px
         width: 41px
         height: 41px
         bottom: 38px
@@ -88,6 +92,7 @@
     width: 768px
     margin-right: auto
     margin-left: auto
+    margin-bottom: 74px
     .categories-item
       width: 256px
       padding-left: 24px
@@ -135,3 +140,6 @@
         left: auto
         right: 20px
         bottom: 20px
+        background-size: 100%
+        width: 28px
+        height: 28px

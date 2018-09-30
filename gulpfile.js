@@ -35,7 +35,7 @@ gulp.task('sprite', function () {
 		imgName: 'sprite.png',
 		cssName: 'sprite.css'
 	}));
-	return spriteData.pipe(gulp.dest('app/img/sprite/'));
+	return spriteData.pipe(gulp.dest('app/img/'));
 });
 
 

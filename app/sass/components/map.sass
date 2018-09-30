@@ -22,10 +22,10 @@
 
   .map-contacts
     position: absolute
-    top: 115px
-    left: 268px
-    background: #ffffff
-    width: 550px
+    top: 165px
+    left: 70px
+    background: #fff
+    width: 500px
     height: 366px
     padding-left: 66px
     padding-top: 71px
@@ -33,7 +33,8 @@
       position: absolute
       bottom: 73px
       right: 49px
-      background: url("../img/sprite/contacts-logo.png") no-repeat center center
+      background: url("../img/sprite.png") no-repeat center center
+      background-position: 0px 0px
       width: 136px
       height: 76px
     .map-contacts__title
@@ -67,13 +68,15 @@
         height: 17px
         display: inline-block
         margin-right: 16px
-        background: url("../img/sprite/contacts-phone-icon.png") no-repeat center center
+        background: url("../img/sprite.png") no-repeat center center
+        background-position: -60px -459px
     .map-contacts__email
       .map-contacts__icon
         width: 17px
         height: 14px
         display: inline-block
-        background: url("../img/sprite/contacts-email-icon.png") no-repeat center center
+        background: url("../img/sprite.png") no-repeat center center
+        background-position: -349px -459px
         margin-right: 16px
       .map-contacts__link
         color: #083e6f
@@ -101,12 +104,18 @@
       padding: 40px 60px
       top: auto
       bottom: 35px
+      padding-left: 45px
+      padding-top: 52px
+      .map-contacts-logo
+        bottom: 40px
+      .map-contacts__info
+        width: auto
 
 
 
 @media only screen and (max-width : 767px)
   .map
-    height: 505px
+    height: 562px
     padding-bottom: 265px
     border-bottom: 1px solid #ebebeb
     .ymaps-2-1-65-map
@@ -114,7 +123,7 @@
     .map-contacts
       position: relative
       width: 100%
-      padding-top: 30px
+      padding-top: 26px
       padding-left: 20px
       padding-right: 20px
       padding-bottom: 40px
@@ -123,6 +132,9 @@
         display: none
       .map-contacts__title
         font-size: 20px
+        margin-bottom: 14px
+        &:before
+          bottom: 5px
       .map-contacts__info
         font-size: 14px
         width: auto
