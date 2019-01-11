@@ -28,7 +28,7 @@ gulp.task('common-js', function () {
 });
 
 gulp.task('sprite', function () {
-	var spriteData = gulp.src('app/img/sprite/*.png').pipe(spritesmith({
+	var spriteData = gulp.src('app/img/sprite2/*.png').pipe(spritesmith({
 		padding: 40,
 		algorithmOpts: { sort: false },
 		cssFormat: 'css',

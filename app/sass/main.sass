@@ -31,13 +31,6 @@
 	color: #666
 	opacity: 1
 
-body input:focus:required:invalid,
-body textarea:focus:required:invalid
-	color: #666
-body input:required:valid,
-body textarea:required:valid
-	color: #666
-
 html
 	height: 100%
 
@@ -45,82 +38,161 @@ body
 	padding-bottom: 0px
 	margin: 0 auto
 	position: relative
+	height: 100%
 
 .clearfix:after
 	content: ""
 	display: table
 	clear: both
 
-input
-	-webkit-appearance: none
-	-moz-appearance: none
-	appearance: none
+.wrapper
+	background: url("../img/bg-with-lines.jpg") no-repeat center center
+	background-size: cover
+	height: 100%
 
-.img-responsive
-	display: block
-	max-width: 100%
-	height: auto
-
-.hidden
-	display: none
-
-.main
-	background: #e2e5e6
-	background: -moz-linear-gradient(top, #e2e5e6 2%, #ffffff 29%)
-	background: -webkit-linear-gradient(top, #e2e5e6 2%,#ffffff 29%)
-	background: linear-gradient(to bottom, #e2e5e6 2%,#ffffff 29%)
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e5e6', endColorstr='#ffffff',GradientType=0 )
-
-	.content
-		margin: 0 0 0 280px
-	.sidebar
-		width: 280px
-		max-width: 280px
-		background: #083e6f
-		position: fixed
-		left: 0
-		top: 0
-		bottom: 0
-		color: #fff
-		z-index: 10
-
-.container-fixed
-	width: 960px
+.container
+	width: 1280px
 	margin: 0 auto
 	position: relative
+	//height: 100%
 
-// components
-@import "components/sidebar.sass"
-@import "components/banner.sass"
-@import "components/categories.sass"
-@import "components/news.sass"
-@import "components/about.sass"
-@import "components/map.sass"
-@import "components/our-friends.sass"
-@import "components/footer.sass"
-@import "components/page.sass"
-@import "components/sidebar-menu.sass"
-@import "components/breadcrumbs.sass"
-@import "components/academy.sass"
-@import "components/news-additional-bottom.sass"
-@import "components/feedback.sass"
-@import "components/news-page.sass"
-@import "components/pagination.sass"
-@import "components/aerodrome.sass"
-@import "components/services.sass"
-@import "components/trackers.sass"
-@import "components/sport.sass"
-@import "components/photo-video.sass"
-@import "components/menu-mobile.sass"
-@import "components/left-menu.sass"
-@import "components/popups.sass"
+.header
+	.phone
+		font-size: 30px
+		color: #ffc613
+		font-family: "Gilroy-Semibold"
+		text-align: left
+		text-decoration: none
+		float: left
+		margin-top: 128px
+
+	.social
+		text-align: right
+		float: right
+		margin-top: 125px
+		.social-item
+			width: 40px
+			height: 40px
+			float: left
+			margin-left: 16px
+			&.social-ig
+				background: url("../img/social-ig.png") no-repeat center center
+			&.social-fb
+				background: url("../img/social-fb.png") no-repeat center center
 
 
-@media only screen and (max-width : 1299px)
-	.main
-		.sidebar
+.info
+	margin: 0 auto
+	text-align: center
+	margin-top: 30px
+	margin-bottom: 205px
+	.logo
+		width: 429px
+		height: 240px
+		background: url("../img/logo.png") no-repeat center center
+		margin: auto
+
+
+	.text
+		font-size: 52px
+		font-family: "Gilroy-Semibold"
+		text-align: center
+		color: #fff
+		margin-top: 45px
+		margin-bottom: 55px
+
+	.mail__link
+		text-align: center
+		font-size: 16px
+		color: #ffc613
+		font-family: "Gilroy-Regular"
+
+
+.copyright
+	text-align: center
+	font-size: 14px
+	color: #fff
+	font-family: "Gilroy-Regular"
+	margin: 0 auto
+	//padding-bottom: 50px
+	br
+		display: none
+
+@media only screen and (max-width : 4000px)
+	.wrapper
+		position: fixed
+		width: 100%
+
+
+@media only screen and (max-width : 1279px)
+
+	.wrapper
+		height: auto
+		position: relative
+
+	.container
+		width: 100%
+
+	.header
+		.phone
+			margin-left: 50px
+
+		.social
+			margin-right: 50px
+
+	.copyright
+		padding-bottom: 50px
+		br
 			display: none
-		.content
-			margin: 0 auto
-	.container-fixed
-		width: auto
+	.info
+		margin-top: 120px
+
+
+
+
+@media only screen and (max-width : 768px)
+
+	.container
+		width: 100%
+
+	.header
+		.phone
+			margin-left: 25px
+
+		.social
+			margin-right: 25px
+
+	.copyright
+		br
+			display: none
+
+	.info
+		margin-top: 15px
+
+
+@media only screen and (max-width : 500px)
+
+	.container
+		width: 100%
+
+	.header
+		.phone
+			margin-left: 20px
+			font-size: 22px
+			margin-top: 133px
+
+		.social
+			margin-right: 20px
+
+	.copyright
+		br
+			display: block
+
+	.info
+		margin-top: 15px
+
+		.logo
+			width: 255px
+			background-size: contain
+		.text
+			font-size: 32px

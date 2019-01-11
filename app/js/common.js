@@ -118,7 +118,6 @@ $( document ).ready(function() {
         }
     });
 
-
     // FRIENDS SLIDER
     var swiperFriends = new Swiper('.swiper-friends', {
         speed: 500,
@@ -153,10 +152,12 @@ $( document ).ready(function() {
         swiperFriends.slideNext();
     });
 
+
+
     // NEWS SLIDER
     var swiperAddNews = new Swiper('.swiper-add-news', {
         speed: 500,
-        loop: true
+        loop: false
     });
 
     $('.news-list-nav-prev-btn').on('click', function (e) {
@@ -168,7 +169,7 @@ $( document ).ready(function() {
     });
 
     // NEWS SLIDER MOBILE
-    var swiperAddNews = new Swiper('.swiper-add-news-mobile', {
+    var swiperAddNewsMobile = new Swiper('.swiper-add-news-mobile', {
         speed: 500,
         loop: true,
         breakpoints: {
@@ -191,18 +192,18 @@ $( document ).ready(function() {
     });
 
     $('.news-m-list-nav-prev-btn').on('click', function (e) {
-        swiperAddNews.slidePrev();
+        swiperAddNewsMobile.slidePrev();
     });
 
     $('.news-m-list-nav-next-btn').on('click', function (e) {
-        swiperAddNews.slideNext();
+        swiperAddNewsMobile.slideNext();
     });
 
 
     // NEWS BOTTOM SLIDER
     var swiperAddNewsBottom = new Swiper('.swiper-add-bottom-news', {
         speed: 500,
-        loop: true,
+        loop: false,
         slidesPerView: 3,
         spaceBetween: 40
     });
@@ -257,6 +258,12 @@ $( document ).ready(function() {
         $(this).closest(".menu-mobile-wrapper").toggleClass( "active" );
     });
 
+    if ($(window).width() <= 500) {
+        var wHeight = $(window).height();
+        wHeight = wHeight + 30;
+        $(".pushy-content").css({"height": wHeight + "px"});
+    }
+
     // PUSHY RESIZE
     $( window ).resize(function() {
         if ($(window).width() <= 1299) {
@@ -264,6 +271,12 @@ $( document ).ready(function() {
                 $('#menu-btn').click();
                 $('#menu-btn').removeClass("active");
             }
+        }
+
+        if ($(window).width() <= 500) {
+            var wHeight = $(window).height();
+            wHeight = wHeight + 30;
+            $(".pushy-content").css({"height": wHeight + "px"});
         }
     });
 
